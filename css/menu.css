@@ -1,0 +1,319 @@
+*{
+	padding: 0;
+	margin: 0;
+	font-family: sans-serif;
+}
+#map{
+	position: relative;
+	margin: 0;
+	padding: 0;
+}
+div.background {
+  top: -50%;
+  left: -50%;
+  width: 10%;
+  height: 10%;
+}
+
+
+.logo {									/* Добавлен блок */
+  position: relative;
+  width: auto;
+  height: 110px;
+  top: 10px;
+  left: 70px;
+  right: 0;
+  bottom: 0;
+  margin: 0;
+  
+}
+
+.title{									/* Добавлен блок */
+	font-size: 12px;
+	position: relative;
+	text-align: center;
+	top: 10px;
+	color: #fff;
+	text-transform: uppercase;
+	font-weight: 700;
+}
+
+hr {										/* Добавлен блок */
+	display: block;
+	margin: 10px 0;
+	border: none;
+	background-color:#d93b3b;
+	height: 2px;
+}
+
+.header{								/* Добавлен блок ИМУЩЕСТВО */
+	cursor: pointer;
+	color: #fafafa;
+	width: 100%;
+  	font-size: 20px;						/* Размер шрифта */
+	text-align: center;						
+  	font-weight: 600;				/* Жирность текста */
+  	position: relative;
+  	margin-bottom: 10px;
+}
+
+.MenuAbout{								/* Добавлен блок О НАС*/
+	cursor: pointer;
+	color: #fafafa;
+	width: 100%;
+  	font-size: 20px;						/* Размер шрифта */
+	text-align: center;						
+  	font-weight: 600;				/* Жирность текста */
+  	position: relative;
+  	margin-top: 10px;
+  	margin-bottom: 10px;
+}
+
+#sidebar {
+	line-height: 1.5;
+	position: fixed;
+	width: 250px;
+	background: #1a1a19; /*#212422 #0f0f0f */ 
+	border: 4px solid #d93b3b;
+	border-radius: 10px;
+	left: 10px;
+	top: 10px;
+	-moz-transition: all 1000ms;
+	-webkit-transition: all 1000ms;
+	-transition: all 1000ms;
+	z-index: 1000;
+
+}
+
+#sidebar.active {
+	left: -264px;
+}
+
+#sidebar_arrow {
+	position: relative;
+	display: block;
+	fill: #d93b3b;
+	-moz-transition: 780ms;
+	-webkit-transition: 780ms;
+	-transition: 780ms;
+}
+#sidebar_arrow.active {
+	transform: rotate(180deg);
+}
+
+.arrow_in_sidebar {
+	position: relative;
+	width: 12px;
+	height: 20px;
+	left: 5px;
+	top: 4px;
+	fill: #d22828;
+	transform:rotate(90deg);
+	-moz-transition: 500ms;
+	-webkit-transition: 500ms;
+	-transition: 500ms;
+}
+
+.arrow_in_sidebar.active{
+	transform: rotate(-90deg);
+	fill: #d93b3b;
+}
+
+#sidebar .toggle-btn {
+
+	position: absolute;
+	left: 270px;
+	top: 20px;
+	background: #212422;
+	padding: 10px;
+	border-radius: 5px;
+	cursor: pointer;
+	-moz-transition: 500ms;
+	-webkit-transition: 500ms;
+	-transition: 500ms;
+
+}
+
+#sidebar .toggle-btn:hover {background: #d93b3b;}
+#sidebar .toggle-btn:hover #sidebar_arrow{fill: #1a1a19;}
+#sidebar .toggle-btn:hover div {background: #fafafa;}
+
+#sidebar .toggle-btn span {
+	display: block;
+	width: 25px;
+	height: 4px;
+	margin: 4px 0;
+}
+
+#MenuAbout{
+	position: relative;
+	margin: 10px;
+}
+
+#InfoAbout{
+	position: relative;
+	visibility: hidden;
+	opacity: 0;
+	font-size: 10px;
+	text-align: center;
+	color: #a1a1a1;
+	text-transform: uppercase;
+	font-weight: 800;
+	height: 0px;
+	margin-bottom: -10px;
+	-webkit-transform: translateY(-15%);
+	-transform: translateY(-15%);
+	transition: margin-bottom 700ms, opacity 750ms 300ms, transform 750ms;
+	-webkit-transition: margin-bottom 700ms, opacity 750ms 300ms, transform 750ms;
+	-o-transition: margin-bottom 700ms, opacity 750ms 300ms, transform 750ms;
+	-moz-transition: margin-bottom 700ms, opacity 750ms 300ms, transform 750ms;
+}
+
+#InfoAbout.active { /*для заголовков*/
+	position: relative;
+	visibility: visible;
+	opacity: 1;
+	color: #fafafa;
+	margin-bottom: 135px;
+	-webkit-transform: translateY(0%);
+	-transform: translateY(0%);
+	transition: margin-bottom 700ms, opacity 750ms 300ms, transform 750ms;
+	-webkit-transition: margin-bottom 700ms, opacity 750ms 300ms, transform 750ms;
+	-o-transition: margin-bottom 700ms, opacity 750ms 300ms, transform 750ms;
+	-moz-transition: margin-bottom 700ms, opacity 750ms 300ms, transform 750ms;
+}
+
+.link{ /*для ссылок*/
+	position: relative;
+	color: #a1a1a1;
+	text-align: center;
+	font-size: 10px;
+	font-weight: 600;
+	text-decoration: none;
+	text-transform: none;
+	cursor: pointer;
+	margin-top: 5px;
+	margin-bottom: 15px;
+}
+
+#InfoHeader{
+	position: relative;
+	visibility: hidden;
+	opacity: 0;
+	text-align: center;
+	color: #a1a1a1;
+	height: 0px;
+	margin-bottom: -10px;
+	-webkit-transform: translateY(-15%);
+	-transform: translateY(-15%);
+	transition: margin-bottom 700ms, opacity 750ms 300ms, transform 750ms;
+	-webkit-transition: margin-bottom 700ms, opacity 750ms 300ms, transform 750ms;
+	-o-transition: margin-bottom 700ms, opacity 750ms 300ms, transform 750ms;
+	-moz-transition: margin-bottom 700ms, opacity 750ms 300ms, transform 750ms;
+}
+
+#InfoHeader.active { 
+	position: relative;
+	visibility: visible;
+	opacity: 1;
+	color: #fafafa;
+	margin-bottom: 270px;
+	-webkit-transform: translateY(0%);
+	-transform: translateY(0%);
+	transition: margin-bottom 700ms, opacity 750ms 300ms, transform 750ms;
+	-webkit-transition: margin-bottom 700ms, opacity 750ms 300ms, transform 750ms;
+	-o-transition: margin-bottom 700ms, opacity 750ms 300ms, transform 750ms;
+	-moz-transition: margin-bottom 700ms, opacity 750ms 300ms, transform 750ms;
+}
+
+.Price_selection{
+	font-size: 16px;
+	margin-bottom: 12px;
+	margin-top: 10px;
+	margin-left: 10px;
+	margin-right: 10px;
+}
+.Profit_selection{
+	font-size: 16px;
+	margin-bottom: 12px;
+}
+.serverone{
+	position: relative;
+	color: #a1a1a1;
+	text-align: center;
+	font-size: 10px;
+	font-weight: 600;
+	text-transform: none;
+	margin-top: 5px;
+	margin-bottom: 15px;
+}
+
+#MenuBusiness{
+	position: relative;
+	color: #fafafa;
+	font-size: 20px;
+	text-align: center;
+	font-weight: 600;
+	transform: scale(0.9);
+	top: -10px;
+	margin-bottom: -30px;
+}
+
+.NameBusiness{
+	position: relative;
+	margin-top: 5px;
+	margin-bottom: 10px;
+	margin-left: 10px;
+	margin-right: 10px;
+}
+.but {
+	opacity: 0;
+}
+@media only screen and (max-width: 962px) {
+	body {
+			position: relative;
+     	width: 100%;
+     	margin: 0 auto; 
+   }
+   #sidebar{
+   		position: fixed;
+   		display: block;   		
+   }
+   #operation{
+   	position: fixed;
+   	display: block;
+   	text-align: right;
+   	margin: 10px;
+   	top: 80px;
+   	left: 264px;
+   	transition: 1000ms;
+    }
+
+		#operation.active{
+   	left: -10px;
+    }
+
+   .but {
+   	opacity: 1;
+	  position: relative;
+   	display: block;
+   	height: 35px;
+   	width: 34px;
+	  text-align: center;
+	  display: block;
+	  padding-top: 5px;
+	  border-radius: 5px;
+	  cursor: pointer;
+	  background-color: #212422;
+	  color: #d93b3b;
+	  font-family: sans-serif;
+	  margin: 10px;
+	  transition: 300ms;
+	  font-size: 26px;
+	  }
+	  
+	  .but:hover{
+	  background-color: #d93b3b;
+	  color: #212422;
+	 } 
+}

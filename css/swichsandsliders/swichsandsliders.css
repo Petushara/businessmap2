@@ -1,0 +1,188 @@
+.ui-widget.ui-widget-content{
+    border: 1px solid #d22828;
+}
+.slaider{
+    position: relative;
+    margin: 10px;
+}
+
+.polzunok-container-busuness1 * {
+    box-sizing: border-box;
+    outline: none;
+}
+.polzunok-container-busuness1 {
+    position: relative;
+    margin-top: 10px;
+    margin-left: 12px;
+    margin-right: 12px;
+}
+
+.polzunok-container-busuness1 .ui-slider { /*задний фон ползунка*/
+    position: relative;
+    background: #a1a1a1;
+    height: 10px;
+    border-radius:10px;
+    
+    box-shadow: inset 2px/*тень слева сбоку*/ 2px/*тень сверху*/ 5px/*тень общая*/ rgba(0, 0, 0, 0.9), 1px 1px 5px rgba(255, 255, 255, 0); 
+}
+.polzunok-container-busuness1 .ui-slider .ui-slider-handle { 
+    position: absolute;
+    margin-left: -16px;
+    width: 32px;
+    height: 32px;
+    cursor: pointer;
+    border-radius: 50%;
+    border: 4px solid #d22828;
+    top: -11px;
+    background: #1a1a19;
+    z-index: 2;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.2), 0 4px 6px rgba(0,0,0,0.2);
+    transition: transform 0.2s, border 0.4s;
+}
+.polzunok-container-busuness1 .ui-slider .ui-slider-handle:hover,
+.polzunok-container-busuness1 .ui-slider .ui-slider-handle:focus {
+    transform: scale(1.2);
+    border: 4px solid #d93b3b;
+}
+.polzunok-input-busuness1-left,
+.polzunok-input-busuness1-right {
+    position: relative;
+    color: #fff;
+    height: 32px;
+    background: #1a1a19;
+    border-radius: 28px;
+    border: 3px solid #d93b3b;
+    text-align:center;
+    font-size: 18px;
+    margin: 5px;
+    width: 100px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.2), 0 4px 6px rgba(0,0,0,0.2);
+}
+.polzunok-input-busuness1-left {
+    left: -65px;
+    top: 17px;
+}
+.polzunok-input-busuness1-right {
+    top: -25px;
+    left: 65px;
+}
+.polzunok-container-busuness1 .ui-slider .ui-slider-range { /* тут подсветка переднего ползунка */
+    position: absolute;
+    z-index: 1;
+   /*height: 10px;*/
+    border: 0;
+    background: #d93b3b;
+    border-radius:10px;
+    box-shadow: inset 2px 2px 5px rgba(0, 0, 0, 0.4), 1px 1px 5px rgba(0, 0, 0, 1);  /*передний фон ползунка*/
+}
+
+.polzunok-container-busuness2 * {
+    box-sizing: border-box;
+    outline: none;
+}
+.polzunok-container-busuness2 {
+    position: relative;
+    margin-top: 10px;
+    margin-left: 12px;
+    margin-right: 12px;
+}
+
+.polzunok-container-busuness2 .ui-slider { /*задний фон ползунка*/
+    position: relative;
+    background: #a1a1a1;
+    height: 10px;
+    border-radius:10px;
+    
+    box-shadow: inset 2px/*тень слева сбоку*/ 2px/*тень сверху*/ 5px/*тень общая*/ rgba(0, 0, 0, 0.9), 1px 1px 5px rgba(255, 255, 255, 0); 
+}
+.polzunok-container-busuness2 .ui-slider .ui-slider-handle { 
+    position: absolute;
+    margin-left: -16px;
+    width: 32px;
+    height: 32px;
+    cursor: pointer;
+    border-radius: 50%;
+    border: 4px solid #d22828;
+    top: -11px;
+    background: #1a1a19;
+    z-index: 2;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.2), 0 4px 6px rgba(0,0,0,0.2);
+    transition: transform 0.2s, border 0.4s;
+}
+.polzunok-container-busuness2 .ui-slider .ui-slider-handle:hover,
+.polzunok-container-busuness2 .ui-slider .ui-slider-handle:focus {
+    transform: scale(1.2);
+    border: 4px solid #d93b3b;
+}
+.polzunok-input-busuness2-left,
+.polzunok-input-busuness2-right {
+    position: relative;
+    color: #fff;
+    height: 32px;
+    background: #1a1a19;
+    border-radius: 28px;
+    border: 3px solid #d93b3b;
+    text-align:center;
+    font-size: 18px;
+    margin: 5px;
+    width: 100px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.2), 0 4px 6px rgba(0,0,0,0.2);
+}
+.polzunok-input-busuness2-left {
+    left: -65px;
+    top: 17px;
+}
+.polzunok-input-busuness2-right {
+    top: -25px;
+    left: 65px;
+}
+.polzunok-container-busuness2 .ui-slider .ui-slider-range { /* тут подсветка переднего ползунка */
+    position: absolute;
+    z-index: 1;
+   /*height: 10px;*/
+    border: 0;
+    background: #d93b3b;
+    border-radius:10px;
+    box-shadow: inset 2px 2px 5px rgba(0, 0, 0, 0.4), 1px 1px 5px rgba(0, 0, 0, 1);  /*передний фон ползунка*/
+}
+.switchbusuness {
+    position: absolute;
+    transform: scale(0.8);
+    width: 55px;
+    top: 1px;
+    left: 170px;
+    z-index: 100;
+}
+.switchbusuness label { /*переключатель*/
+    width: 55px;
+    height: 23px;
+    position: absolute;
+    background-color: #999; /* цвет фона выключенного переключателя */
+    top: 0;
+    left: 0;
+    border-radius: 50px;
+    box-shadow: inset 2px 2px 10px rgba(0, 0, 0, 0.6), 1px 1px 5px rgba(0, 0, 0, 0.5);
+    border: 2px solid #d22828;
+}
+.switchbusuness input[type="checkbox"] {
+    visibility: hidden;
+}
+.switchbusuness label:after { /*кружок на переключателе*/
+    content: "";
+    width: 18px;
+    height: 18px;
+    top: -2px;
+    left: -3px;
+    border-radius: 50px;
+    position: absolute;
+    transition: all 0.1s;
+    background-color: #1a1a19; /* цвет кружка переключателя */
+    border: 4px solid #d93b3b;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.5), 0 4px 6px rgba(0,0,0,0.5);
+}
+.switchbusuness input[type="checkbox"]:checked + label {
+    background-color: #d93b3b; /* цвет фона включенного переключателя */
+}
+.switchbusuness input[type="checkbox"]:checked + label:after {
+    left: 33px;
+}

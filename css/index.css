@@ -1,0 +1,17 @@
+body{
+    overflow: hidden;
+    background-repeat: no-repeat;
+    background-color: #7e8fb1;
+    -ms-user-select: none;
+    -moz-user-select: none;
+    -khtml-user-select: none;
+    -webkit-user-select: none;
+}
+
+.map {
+    background-color: #7e8fb1;    
+    width: 720px;
+    height: 720px;
+    padding-left: 280px;
+}
+
